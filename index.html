@@ -4,8 +4,13 @@
   	<title>Brodie Milliken Home Page</title>
     <style>
 
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
     body{
-      background-color: darkgray;
+      background-color: rgb(20,20,30);
     }
 
     /* Main */
@@ -39,7 +44,7 @@
 
     /* Cover Image */
     #coverImage {
-      margin-left: -10px;
+      margin-left: -15px;
       margin-top: -10px;
       margin-right: -10px;
     }
@@ -47,19 +52,16 @@
     /* Profile Image */
     #profileImage {
       border-radius: 50px;
-      margin-right: 5px;
-      margin-top: -195px;
+      margin-right: 10px;
+      margin-top: -185px;
       position: relative;
 
     }
 
     /* Education */
     #hotBar {
-      background-color: white;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      width = 100%;
-      height: 40px;
+      background-color: darkGray;
+      height: auto;
       margin-left: -10px;
       margin-right: -10px;
       margin-top: -20px
@@ -77,7 +79,6 @@
     }
 
     #hotBar ul {
-      min-width: 800px;
       margin-top: -25px;
       margin-left: -100px;
       justify-content: center;
@@ -88,52 +89,113 @@
       color: white;
     }
 
-    /* Bio */
-    #Bio {
-      background-color: white;
-      height: 200px;
-      width: 80%;
-      border-radius: 20px;
-      text-align: left;
+    #hotBar #botP {
+      margin-top: -15px;
     }
 
-    #Bio h2 {
-      margin-left: 20px
+    /* Bio */
+    #Bio {
+      position: absolute;
+      background-color: darkGray;
+      height: 250px;
+      width: 600px;
+      border-radius: 20px;
+      margin-top: 50px;
+      margin-left: 50px;
+      text-align: left;
+    }
+    #Bio h3 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #Bio h3::first-letter {
+      font-size: 150%;
+    }
+    #Bio p {
+      margin-left: 20px;
+      margin-top: -15px;
+      margin-right: 20px;
+      line-height: 20px;
+    }
+
+    #Bio #placeHolder{
+      color:darkGray;
+    }
+
+    #MetaBalls {
+      float: left;
+      margin-top: -15px;
+      margin-left: -10px;
+      width: 1440px;
     }
 
     /* Projects */
     #Projects {
-      background-color: white;
-      height: 200px;
-      width: 80%;
-      border-radius: 20px;
-      text-align: left;
+      background-color: darkGray;
+      width:  100%;
+      margin-top: 390px;
     }
 
-    #Projects h2 {
-      margin-left: 20px
+    #Projects {
+      background-color: rgb(200,200,200);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    #Projects #title h2 {
+      margin-left: 20px;
+      margin-top: -20px;
+    }
+
+    #Projects #placeHolder {
+      color: darkGray;
+    }
+
+    #Projects table {
+      margin-top: -10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      border-spacing: 0px;
+    }
+
+    #Projects table tr {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #Projects table tr li {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #Projects #botP {
+      margin-top: -30px;
     }
 
     /* Social Media */
     #Social-Media {
-      background-color: white;
-      height: 200px;
-      width: 80%;
+      background-color: darkGray;
       border-radius: 20px;
-      text-align: left;
+      width: auto;
+      text-align: center;
     }
 
     #Social-Media h2 {
       margin-left: 20px
     }
 
+    #Social-Media table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
     /* Contact */
     #Contact {
-      background-color: white;
-      height: 200px;
-      width: 80%;
+      background-color: darkGray;
       border-radius: 20px;
-      text-align: left;
+      text-align: center;
     }
 
     #Contact h2 {
@@ -147,8 +209,8 @@
 
   <body>
     <div id = "topBar">
-      <img id = "coverImage" src = "Cover Image.png" height="200" width = 1440px>
-      <img id = "profileImage" style = "float: right;" src = "Profile Image.PNG" height="100">
+      <img id = "coverImage" src = "Images/Cover Image.png" height="200" width = 1440px>
+      <img id = "profileImage" style = "float: right;" src = "Images/Profile Image.PNG" height="100">
     </div>
     <div id = "main">
       <p> . </p>
@@ -158,32 +220,64 @@
     <div id = "hotBar">
       <p> . </p>
       <ul>
-        <li> <a href = ""> Computer Science Major </a> </li>
-        <li> <a href = ""> Physics Minor </a> </li>
-        <li> <a href = ""> Side Projects </a> </li>
-        <li> <a href = ""> Social Media </a> </li>
-        <li> <a href = ""> Contact </a> </li>
+        <li> <a href = "#Bio"> Computer Science Major </a> </li>
+        <li> <a href = "#Bio"> Physics Minor </a> </li>
+        <li> <a href = "#Projects"> Side Projects </a> </li>
+        <li> <a href = "#Social-Media"> Social Media </a> </li>
+        <li> <a href = "#Social-Media"> GitHub </a> </li>
+        <li> <a href = "#Contact"> Contact </a> </li>
       </ul>
+      <p id = "botP"> . </p>
     </div>
-
+    <img id = "MetaBalls" src = "Images/Meta Balls Long.png">
     <div id = "Bio">
-      <h2> Bio </h2>
-
+      <h3> I’m Brodie Milliken, a future-driven computer science major at the Ohio
+        State University with a love for physics and simulation design. </h3>
+      <p> I am specializing in software and game development and also minoring in
+        physics. My favorite part about being in computer science is the freedom
+        for creativity that it opens up. Combining physics and coding to create
+        simulations has been a dream of mine since I first wrote down “hello
+        world” on my first day. Now that I have reached a point in my life
+        where I can begin to start making these simulations. I want to share
+        them. Anything from vector fields to simulate wind, to simulations of
+        tens of thousands of asteroids orbiting a planet all interacting with
+        each other. I hope to work in a field someday where I can apply the
+        skills that I have been learning. </p>
     </div>
+
+
     <div id = "Projects">
-      <h2> Projects </h2>
-
+      <p id = placeHolder> . </p>
+      <div id = "title">
+        <h2> Java Processing Projects </h2>
+      </div>
+      <table>
+        <tr>
+          <th><a href=""><img src = "Images/3D Terrain Generation.png" alt = "3D Terrain Generation and Chunk Loading" width = 100%> </a></th>
+          <th><a href=""><img src = "Images/Solids of Revolution.png" alt = "Solids of Revolution" width = 100%> </a></th>
+          <th><a href=""><img src = "Images/Bomb Dropping Game.png" alt = "2D Bomber Video Game" width = 100%> </a></th>
+        </tr>
+        <tr>
+          <th><a href=""><img src = "Images/Flow Field.png" alt = "2D FLow Field" width = 100%> </a></th>
+          <th><a href=""><img src = "Images/Ball Bouncing.png" alt = "2D Ball Bouncing on Rugged Terrain" width = 100%> </a></th>
+          <th><a href=""><img src = "Images/Gravity Simulation.png" alt = "Gravitational Simulation" width = 100%> </a></th>
+        </tr>
+      </table>
+      <p id = "botP"> . </p>
     </div>
-    <div id = "Social-Media">
-      <h2> Social Media </h2>
 
+    <div id = "Social-Media">
+      <table>
+        <tr>
+          <th> <a href=""><img src = "Images/Instagram.png" height = 100px;></a></li>
+          <th> <a href=""><img src = "Images/LinkedIn.png" height = 100px;></a></li>
+          <th> <a href=""><img src = "Images/Github.svg" height = 100px;></a></li>
+          <th> <a href=""><img src = "Images/Youtube.png" height = 100px;></a></li>
+        </tr>
+      </table>
     </div>
     <div id = "Contact">
-      <h2> Contact </h2>
-
+      <h2> Contact: <a href="mailto:brodiemilliken@gmail.com"> brodiemilliken@gmail.com</a></h2>
     </div>
-
-
-
   </body>
 </html>
